@@ -4,16 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet">
+
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
+    <header class="header">
+      <i class="fa-solid fa-bars fa-icon"></i>
+      <h1 class="title-header">Test Task</h1>
+      <i class="fa-brands fa-instagram fa-icon"></i>
+    </header>
 
-    <button type="button" class="btn">Fetch users</button>
-    <ul class="user-list"></ul>
-    
+    <main>
+      <section class="section">
+        <h2 class="title-post">Posts</h2>
+        <ul class="user-list"></ul>
+      
+      <h2 class="title-post">Create Post</h2>
+        <form id="createPostForm" class="form">
+          <input type="text" id="title" class="form__title" placeholder="Enter Your Title" required>
+      
+          <input type="text" id="description" class="form__description" placeholder="Enter Your Subtitle" required>
+      
+          <input type="text" id="text" class="form__text" placeholder="Enter Your Description" required>
+      
+          <button type="submit" class="btn">Post</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="formPost.js"></script>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/907bb1da87.js" crossorigin="anonymous"></script>
   </body>
 </html>
